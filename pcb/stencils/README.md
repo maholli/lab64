@@ -5,7 +5,7 @@
 This write-up documents a working procedure for cutting PCB stencils on the trotec 130W CO2 laser cutter. 
 This procedure is **by no means** optimized and users are encouraged to experiment with better methods/techniques. 
 
-The thickness of the stencil and the size of the opening are specific for each component included in the PCB design and will be defined by the manufacturer (typically in the datasheet). This tutorial describes a process for cutting a non-adhesive polyimide (aka Kapton) film that is 0.005 inch (5 mils) thick. 
+The thickness of the stencil and the size of the openings are specific for each component included in the PCB design and will be defined by the manufacturer (typically in the datasheet). This tutorial describes a process for cutting a non-adhesive polyimide (aka Kapton) film that is 0.005 inch (5 mils) thick. 
 
 
 
@@ -27,7 +27,7 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/3.PNG">
 </p>
 
-3.	Once exported, open the SVG file in Inkscape. This can be done on the laptop in 004 if you don't have inscape installed.
+3.	Once exported, open the SVG file in Inkscape. This can be done on the laptop in 004 if you don't have Inscape installed.
 
 4.	Begin preparing the SVG file by selecting everything (Ctrl+A on windows), then ungroup everything (Ctrl+U) This will maintain each component's group, but allow the PCB outline to be selected.
 
@@ -46,7 +46,7 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="250" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/4b.PNG">
 </p>
 
-8. While on the Fill tab, click the "X" box to change the paint parameters from "undefined" to "no paint.
+8. While on the Fill tab, click the "X" box to change the paint parameters from "undefined" to "no paint."
 
 9.	Next, with the border still selected, go to the stroke paint tab and change the RGB value from pure black to pure blue (RGB values of R: 0, G: 0, B: 255, A: 255).
 
@@ -54,10 +54,10 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/5.PNG">
 </p>
 
-10.	For the trotec, it's important your stencil design doesn't contain any lines (or edges) that run parallel to the axis of movement. Therefore, select the entire design again (Ctrl +A), and left click once on any line of your board to change the bounding-box transform mode to rotation. Hover your mouse above one of the small white boxes located at the corners of your selected board. The cursor should change into a rotation symbol. While still holding Ctrl, click and drag the mouse to the left in order to rotate the design 45 degrees. Unless your board contains components at odd angles, your design should now look similar to Figure 6.
+10.	For the trotec, it's important your stencil design doesn't contain any lines (or edges) that run parallel to the axis of movement. Therefore, select the entire design again (Ctrl +A), and left click once on any line in your design to change the bounding-box from "transform" mode to "rotation" mode. Hover your mouse above one of the small white boxes located at the corners of your design. The cursor should change into a rotation symbol. While still holding Ctrl, click and drag the mouse to the left in order to rotate the design 45 degrees. Unless your board contains components at odd angles, your design should now look similar to the design above.
 	>NOTE: Many of the footprints have been removed from the design in shown above to allow for soldering of only a portion of the board. 
 
-11.	After rotating, the design is now larger than the Inkscape canvas. To fix this, go to FILE -> Document Properties (Shift + Ctrl + D) and increase the Width and Height values to exceed the blue board outline by about 0.5 inch. 
+11.	After rotating, the design is now larger than the Inkscape canvas. To fix this, go to FILE -> Document Properties (Shift + Ctrl + D) and increase the Width and Height values to exceed the blue board outline by about at least 0.5 inch. 
 
 12.	Close the Document Properties windows (**NOT the main Inkscape window**) and position the design in the middle of the canvas by selecting all (Ctrl + A) and left-click dragging.
 
@@ -83,7 +83,7 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 18. While the file is being parsed, start the trotec chiller and then turn on the laser cutter.
 
-	### Film preparation
+	### Film Preparation
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/9.jpg">
@@ -134,4 +134,11 @@ The thickness of the stencil and the size of the opening are specific for each c
 </p>
 
 27. Carefully remove the contact-paper from the topside and continue cleaning with isopropyl alcohol. A freshly cut stencil that's been (mostly) cleaned is pictured above. 
+
+### Congradulations! You made your frist stencil. I'll work on adding a section to this write-up detailing how I like to stencil solderpaste onto a board. Here's an example of what that'd look like:
+
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/16.jpg">
+</p>
+
 
