@@ -8,13 +8,19 @@ This procedure is **by no means** optimized and users are encouraged to experime
 The thickness of the stencil and the size of the opening are specific for each component included in the PCB design and will be defined by the manufacturer (typically in the datasheet). This turtorial describes a process for cutting a non-adhesive polyimide (aka Kapton) film that is 0.005 inch (5 mils) thick. 
 
 
-![Figure 1]()
 
+<p align="middle">
+  <img width="800" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/1.PNG">
+</p>
 
 1.	Begin by exporting the solderpaste artwork from the PCB layout tool. This example shows the process for Autodesk's Eagle layout software. Figure 1 shows which layers to enable in Eagle.
 	>NOTE: although we won't be cutting the board outline, it's important to include for scaling/alignment purposes. 
 
-	![Figure 2]()
+	<p align="middle">
+  		<img width="800" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/2.PNG">
+  		ng the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloa
+	</p>
+	
 
 2.	After configuring the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloaded script. Setup the export window as shown in Figure 2.
 
