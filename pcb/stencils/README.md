@@ -10,21 +10,22 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 
 <p align="middle">
-  <img width="800" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/1.PNG">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/1.PNG">
 </p>
 
 1.	Begin by exporting the solderpaste artwork from the PCB layout tool. This example shows the process for Autodesk's Eagle layout software. Figure 1 shows which layers to enable in Eagle.
 	>NOTE: although we won't be cutting the board outline, it's important to include for scaling/alignment purposes. 
 
-	<p align="middle">
-  		<img width="800" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/2.PNG">
-  		ng the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloa
-	</p>
+<p align="middle">
+	<img width="500" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/2.PNG">
+</p>
 	
 
 2.	After configuring the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloaded script. Setup the export window as shown in Figure 2.
 
-	![Figure 3]()
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/3.PNG">
+</p>
 
 3.	Once exported, open the SVG file in Inkscape. This can be done on the laptop in 004 if you don't have inscape installed. It should look something like Figure 3.
 
@@ -34,18 +35,24 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 6.	With the entire boarder selected, group the outline paths together (Ctrl+G)
 
-	![Figure 4]()
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/4.PNG">
+</p>
 
 7.	The Fill and Stroke parameters of the group will now be undefined, as indicated by the highlighted questionmark shown in Figure 4. 
 	>NOTE: If you do not seen the Fill and Stroke menu, enable it by going to EDIT -> Fill and Stroke (Shift + Ctrl + F). 
 
-	![Figure 4b]()
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/4b.PNG">
+</p>
 
 8. While on the Fill tab, click the "X" box to change the paint parameters from "undefined" to "no paint.
 
 9.	Next, with the border still selected, go to the stroke paint tab and change the RGB value from pure black to pure blue (RGB values of R: 0, G: 0, B: 255, A: 255).
 
-	![Figure 5]()
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/5.PNG">
+</p>
 
 10.	For the trotec, it's important your stencil design doesn't contain any lines (or edges) that run parallel to the axis of movement. Therefore, select the entire design again (Ctrl +A), and left click once on any line of your board to change the bounding-box transform mode to rotation. Hover your mouse above one of the small white boxes located at the corners of your selected board. The cursor should change into a rotation symbol. While still holding Ctrl, click and drag the mouse to the left in order to rotate the design 45 degrees. Unless your board contains components at odd angles, your design should now look similar to Figure 6.
 	>NOTE: Many of the footprints have been removed from the design in Figure 6 to allow for soldering of only a portion of the board. 
@@ -54,7 +61,9 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 12.	Close the Document Properties windows (**NOT the main Inkscape window**) and position the design in the middle of the canvas by selecting all (Ctrl + A) and left-click dragging.
 
-	![Figure 6]()
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/6.PNG">
+</p>
 
 13. Save the Inkscape design as a **Plain SVG** as seen in Figure 6.
 
@@ -62,7 +71,9 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 15. After opening the plain SVG, send the design to the Trotec laser by going to File -> Print (Ctrl + P).
 
-	![Figure 7](%/images/7.PNG)
+<p align="middle">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/7.PNG">
+</p>
 
 16.	Ensure the Trotec Engraver is selected in the print dialog and click "Preferences." Configure the trotec window as shown in Figure 7. 
 	>NOTE: in this case, it's very important that Resolution is set to 1000 dpi.
