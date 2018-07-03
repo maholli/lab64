@@ -5,7 +5,7 @@
 This write-up documents a working procedure for cutting PCB stencils on the trotec 130W CO2 laser cutter. 
 This procedure is **by no means** optimized and users are encouraged to experiment with better methods/techniques. 
 
-The thickness of the stencil and the size of the opening are specific for each component included in the PCB design and will be defined by the manufacturer (typically in the datasheet). This turtorial describes a process for cutting a non-adhesive polyimide (aka Kapton) film that is 0.005 inch (5 mils) thick. 
+The thickness of the stencil and the size of the opening are specific for each component included in the PCB design and will be defined by the manufacturer (typically in the datasheet). This tutorial describes a process for cutting a non-adhesive polyimide (aka Kapton) film that is 0.005 inch (5 mils) thick. 
 
 
 
@@ -21,7 +21,7 @@ The thickness of the stencil and the size of the opening are specific for each c
 </p>
 	
 
-2.	After configuring the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloaded script. Setup the export window as shown.
+2.	After configuring the layers, the artwork must then be exported in SVG format. Eagle does not have a native SVG exporting feature, so [download this Eagle ULP script](https://github.com/maholli/lab64/blob/master/pcb/stencils/eagle2svg-1_4_1.ulp). Once downloaded, click FILE -> Run ULP -> Browse -> and choose the downloaded script. Setup the export window as shown.
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/3.PNG">
@@ -36,7 +36,7 @@ The thickness of the stencil and the size of the opening are specific for each c
 6.	With the entire boarder selected, group the outline paths together (Ctrl+G)
 
 <p align="middle">
-  <img width="500" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/4a.PNG">
+  <img width="250" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/4a.PNG">
 </p>
 
 7.	The Fill and Stroke parameters of the group will now be undefined (the highlighted question mark in the image above). 
@@ -51,7 +51,7 @@ The thickness of the stencil and the size of the opening are specific for each c
 9.	Next, with the border still selected, go to the stroke paint tab and change the RGB value from pure black to pure blue (RGB values of R: 0, G: 0, B: 255, A: 255).
 
 <p align="middle">
-  <img width="250" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/5.PNG">
+  <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/5.PNG">
 </p>
 
 10.	For the trotec, it's important your stencil design doesn't contain any lines (or edges) that run parallel to the axis of movement. Therefore, select the entire design again (Ctrl +A), and left click once on any line of your board to change the bounding-box transform mode to rotation. Hover your mouse above one of the small white boxes located at the corners of your selected board. The cursor should change into a rotation symbol. While still holding Ctrl, click and drag the mouse to the left in order to rotate the design 45 degrees. Unless your board contains components at odd angles, your design should now look similar to Figure 6.
@@ -69,13 +69,13 @@ The thickness of the stencil and the size of the opening are specific for each c
 
 14.	If it isn't already, move the plain SVG file to the 004 laptop via USB flashdrive.
 
-15. After opening the plain SVG, send the design to the Trotec laser by going to File -> Print (Ctrl + P).
+15. After opening the plain SVG, send the design to the trotec laser by going to File -> Print (Ctrl + P).
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/7.PNG">
 </p>
 
-16.	Ensure the Trotec Engraver is selected in the print dialog and click "Preferences," and configure the trotec window as shown. 
+16.	Ensure the trotec engraver is selected in the print dialog and click "Preferences," and configure the trotec window as shown. 
 	>NOTE: in this case, it's very important that Resolution is set to 1000 dpi.
 
 17.	If the trotec software ("JobControl") wasn't already running, it will be started and appear along the bottom windows taskbar. 
@@ -89,13 +89,13 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/9.jpg">
 </p>
 
-19.	Keeping in mind the size of your stencil and being conciencious of the cost of polyimide, use a straight edge to cut an appropriate sheet from the roll.
+19.	Keeping in mind the size of your stencil and being conscientious of the cost of polyimide, use a straight edge to cut an appropriate sheet from the roll.
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/10.jpg">
 </p>
 
-20.	Use the contact-tape to cover the polyimide sheet and adhere it to a flat piece of Duron scrap. Ensure there is uniform contact acrross the film. Squeege out any bubbles if necessary.
+20.	Use the contact-tape to cover the polyimide sheet and adhere it to a flat piece of Duron scrap. Ensure there is uniform contact across the film. Squeegee out any bubbles if necessary.
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/11.jpg">
@@ -107,7 +107,7 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/8c.PNG">
 </p>
 
-22. In the JoeControl software, drag your design from the queue onto the honeycomb cutting area. Work back-and-forth between laser cutter and the laptop to ensure your design is aligned properly over the film. This can be tricky!
+22. In the JobControl software, drag your design from the queue onto the honeycomb cutting area. Work back-and-forth between laser cutter and the laptop to ensure your design is aligned properly over the film. This can be tricky!
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/8b.PNG">
@@ -119,7 +119,7 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/12.jpg">
 </p>
 
-24. Double check you did not skip a step before starting the job. Let all three passes complete (eventhough it looks like it isn't necessary, the three passes are needed for small detailed pads). As shown above, debris from the Duron will collect above the design.
+24. Double check you did not skip a step before starting the job. Let all three passes complete (even though it looks like it isn't necessary, the three passes are needed for small detailed pads). As shown above, debris from the Duron will collect above the design.
 
 25. After the laser is finished, gently brush the debris off the contact-paper with a dry paper towel before peeling the stencil off of the Duron. 
 
@@ -127,11 +127,11 @@ The thickness of the stencil and the size of the opening are specific for each c
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/13.jpg">
 </p>
 
-26. Some Duron compositions are better than others for this process. As you can see, there will be cutting residue on the bottomside of the stencil. Use a papertowel with isopropoal alcohol to remove the residue.
+26. Some Duron compositions are better than others for this process. As you can see, there will be cutting residue on the bottom side of the stencil. Use a paper towel with isopropyl alcohol to remove the residue.
 
 <p align="middle">
   <img width="700" src="https://github.com/maholli/lab64/blob/master/pcb/stencils/images/14.jpg">
 </p>
 
-27. Carefully remove the contact-paper from the topside and continue cleaning with isopropal alcohol. A freshly cut stencil that's been (mostly) cleaned is pictured above. 
+27. Carefully remove the contact-paper from the topside and continue cleaning with isopropyl alcohol. A freshly cut stencil that's been (mostly) cleaned is pictured above. 
 
