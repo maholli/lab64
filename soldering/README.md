@@ -59,7 +59,7 @@ The image below shows what soldering a surface mount lead looks like using exter
 
 ## I am still having trouble
 Here are some common things to check when troublshooting a difficult soldering job:<br>
-1. Solder doesn't stick to the soldering iron! It must be broken!<br><img width="500" src=".../blob/master/soldering/images/1.gif">
+1. Solder doesn't stick to the soldering iron! It must be broken!<br><img width="500" src="https://github.com/maholli/lab64/blob/master/soldering/images/1.gif">
 <br>
 	* Let's not jump to any conclusions, it's likely it was just used by an inexperienced operator that hasn't read this write-up yet. Wipe the tip off and see if solder will wet the surface. The solder should melt easily and stick to the iron. 
 	* If the solder melts but doesn't stick, then your tip probably has a very thin oxide layer. Try again to melt some solder to the tip, then imedately wipe it off on the gold-colored metal sponge.  
