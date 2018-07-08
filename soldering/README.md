@@ -29,20 +29,11 @@ Watch the clip a few times and see if you can spot each step (#1-#6) listed abov
 <br>
 
 ## Important things to keep in mind
-1. Oxides are the enemy! If you've ever struggled to solder, or thought your iron wasn't getting hot enough, **it was probably due to oxide formation!** Oxide layers form on metal surfaces when exposed to oxygen in the air. They are **thermally insulating,** and they form faster at higher temperatures.<img width="500" src=".../blob/master/soldering/images/3.gif"> <br> The clip above illustrates why flux is important. As you can see, the operator has pre-applied solder to the tip before making contact with the lead. As a result, there is no flux available to reduce the oxides present of the lead and pad. The result is a bad solder joint.
-
-We could fix the soldering from the previous clip by using external flux. This is flux that we apply independently (as opposed to the flux-core solder wire which is our usual source of flux). Obviously you should avoid getting in this situtation, but the clip below shows how helpful flux can be.<br><img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/4.gif">
-
-Note that the clip above is for illustrative purposes. It's best practice to reduce the number of times you let the board heat-up and cool-down (each heat/cool cycle degrades epoxy holding the PCB together).
-
-The image below shows what soldering a surface mount lead looks like using external flux. Please note this method is different from using the flux-core solder wire since the operator has pre-applied solder to the tip. This technique should be considered when the previous method shown on the header pin is not possible.<br><img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/5.gif">
-
+1. Oxides are the enemy! If you've ever struggled to solder, or thought your iron wasn't getting hot enough, **it was probably due to oxide formation!** Oxide layers form on metal surfaces when exposed to oxygen in the air. They are **thermally insulating,** and they form faster at higher temperatures.<img width="500" src=".../blob/master/soldering/images/3.gif"> <br> The clip above illustrates why flux is important. As you can see, the operator has pre-applied solder to the tip before making contact with the lead. As a result, there is no flux available to reduce the oxides present of the lead and pad. The result is a bad solder joint.<br><br>We could fix the soldering from the previous clip by using external flux. This is flux that we apply independently (as opposed to the flux-core solder wire which is our usual source of flux). Obviously you should avoid getting in this situtation, but the clip below shows how helpful flux can be.<br><img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/4.gif"><br><br>Note that the clip above is for illustrative purposes. It's best practice to reduce the number of times you let the board heat-up and cool-down (each heat/cool cycle degrades epoxy holding the PCB together).<br><br>The image below shows what soldering a surface mount lead looks like using external flux. Please note this method is different from using the flux-core solder wire since the operator has pre-applied solder to the tip. This technique should be considered when the previous method shown on the header pin is not possible.<br><img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/5.gif">
 2. Most solder wire has a chemical inside called flux. Flux + heat breaks down oxides! You NEED flux to solder properly, but in most cases the flux inside the solder wire is enough. (P.S. flux is what causes the "fumes" you see while soldering)
 3. **Your secret weapons while soldering are controlling/understanding heat flow, oxide formation, and surface tension.**
 4. Size matters! Smaller soldering iron tips transfer heat slower than larger ones. Use the largest tip you can get away with and lower the tip temperature to achieve better control.<br><img width="900" src="https://github.com/maholli/lab64/blob/master/soldering/images/pic2.PNG">
-
 5. Think about HOW the heat is being transfered from the iron to your solder joint. Could there be something like an oxide layer or air gap between the tip and the pad that could be blocking the heat flow?<br><img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/pic3.PNG">
-
 6. Increasing the iron temperature actually makes soldering HARDER! Expect for a few exceptions, increasing temperature is not going to fix any issues you may be having. For example:
 	* Say you're having trouble melting solder onto the tip, and instead of using flux and the sponge to clean the tip, you decide to increase the temperature. Not only does this not fix the root cause, but the higher temperature will cause the oxide layer to grow even faster!
 	* The higher the temperature, the faster the epoxy holding the PCB together will breakdown. This means it will be easier to lift pads or damage components from heat exposure.
@@ -78,7 +69,7 @@ Soldering is (generically) considered the act of joining things together using m
 <br>
 
 ## What is solder
-<img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/pic1.PNG">
+<img width="700" src="https://github.com/maholli/lab64/blob/master/soldering/images/pic1.PNG"><br>
 * Solder is a combination of different metals (AKA an "alloy") that melts at a low temperature, is a strong electrical conductor, and interacts well with the metals found on circuit boards.
 * The standard solder for many years was an alloy of 63% Tin and 37% Lead. Commonly known as SnPb, Sn63Pb37, or just "leaded solder."
 	* Sn63Pb37 melts at about 183C
